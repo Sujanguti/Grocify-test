@@ -1,4 +1,6 @@
-import { useAuth } from '@clerk/expo'
+//protects authentication screen
+
+import { useAuth } from '@clerk/expo' //check is user's logged in
 import { Redirect, Stack } from 'expo-router'
 
 export default function AuthRoutesLayout() {

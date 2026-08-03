@@ -21,7 +21,7 @@
       "package": "com.anonymous.grocifytest"
     },
     "web": {
-      "output": "static",
+      "output": "server",
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
@@ -37,7 +37,17 @@
           }
         }
       ],
-      "expo-secure-store"
+      "expo-secure-store",
+      "expo-web-browser",
+      "@sentry/react-native",
+      [
+        "@sentry/react-native/expo",
+        {
+          "url": "https://sentry.io/",
+          "project": "grocify-test",
+          "organization": "none-zwl"
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true,
